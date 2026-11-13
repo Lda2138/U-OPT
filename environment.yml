@@ -1,0 +1,27 @@
+name: uopt
+channels:
+  - pytorch3d
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch=1.13.1
+  - torchvision=0.14.1
+  - pytorch-cuda=11.6
+  - pytorch3d=0.7.2
+  - numpy=1.23
+  - scipy=1.10
+  - pandas=1.5
+  - matplotlib=3.7
+  - pillow
+  - pyyaml
+  - toolz
+  - tqdm
+  - seaborn
+  - imageio
+  - imageio-ffmpeg
+  - python-lmdb
+  - fvcore
+  - iopath
+  - pip

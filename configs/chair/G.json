@@ -1,0 +1,138 @@
+{
+  "version": "chair_gts_20261030_v3",
+  "seed": 132422,
+  "resume": null,
+  "geometry": true,
+  "texture": false,
+  "schedule": false,
+  "residual_start_index": 30,
+  "residual_end_index": 224,
+  "shape_alpha_max": 0.005,
+  "texture_alpha_max": 0.01,
+  "index_definition": "Zero-based epoch index = completed full training epochs before current epoch.",
+  "dataset": {
+    "category": "03001627",
+    "split": "softras_train.lst",
+    "views": 24,
+    "batch_size": 32,
+    "workers": 2,
+    "validation_split": "softras_val.lst",
+    "validation_objects": 64,
+    "validation_view": 0
+  },
+  "model": {
+    "img_size": [
+      64,
+      64
+    ],
+    "encoder": {
+      "name": "resnet18",
+      "shared": false,
+      "pretrained": false
+    },
+    "mesh": {
+      "init": "ellipse",
+      "scale": 0.4,
+      "use_mean_txt": true,
+      "deform_fields": {
+        "powers": [
+          2,
+          8,
+          64
+        ],
+        "milestones": [
+          14,
+          84,
+          154
+        ],
+        "n_field_units": 512
+      },
+      "texture_uv": {
+        "img_size": 64,
+        "min_features": 64,
+        "powers": [
+          2,
+          8,
+          64,
+          512
+        ],
+        "milestones": [
+          0,
+          14,
+          84,
+          154
+        ]
+      }
+    },
+    "renderer": {
+      "cameras": {
+        "name": "perspective",
+        "focal_length": 3.732050895690918
+      },
+      "faces_per_pixel": 50
+    },
+    "rend_predictor": {
+      "alternate_optim": true,
+      "azim_range": [
+        0,
+        360
+      ],
+      "elev_range": [
+        30,
+        30
+      ],
+      "roll_range": [
+        0,
+        0
+      ],
+      "T_range": [
+        0.2,
+        0.2,
+        0
+      ],
+      "scale_range": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "milestones": {
+      "freeze_scale_predictor": 3,
+      "constant_txt": 14
+    },
+    "loss": {
+      "name": "mse",
+      "rgb_weight": 1,
+      "perceptual_weight": 10,
+      "laplacian_weight": 0.01,
+      "normal_weight": 0.01,
+      "uniform_weight": 0.02,
+      "swap_weight": 1,
+      "swap_memsize": 1024,
+      "swap_n_vpbins": 5
+    }
+  },
+  "training": {
+    "epochs": 238,
+    "base_lr": 0.0001,
+    "residual_lr": 2.5e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "lr_milestones": [
+      224
+    ],
+    "lr_gamma": 0.2,
+    "clip_common": 1.0,
+    "clip_residual": 0.5,
+    "checkpoint_updates": 2000,
+    "validation_updates": 4000,
+    "selection": "Fixed last epoch checkpoint for comparisons; validation monitors only.",
+    "loss_logging": "Every optimizer update; scalar losses already multiplied by inherited weights.",
+    "zero_grad_set_to_none": true
+  },
+  "group": "G"
+}

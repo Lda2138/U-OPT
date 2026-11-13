@@ -1,0 +1,24 @@
+{
+  "release_date": "2026-11-13",
+  "local_unit_tests": {
+    "run": "python -m unittest discover -s tests -v",
+    "passed": 8
+  },
+  "audited_real_result_aggregation": {
+    "groups": 7,
+    "paired_records": 9492,
+    "summary_recomputed_with_public_script": true
+  },
+  "public_plot_regeneration": {
+    "training_and_metric_PNG_PDF_generated": true,
+    "PNG_visual_inspection_completed": true
+  },
+  "core_identity": {
+    "all_model_src_files_identical_to_audited_snapshot": true,
+    "engine_and_resume_checks_identical": true,
+    "geometry_and_image_metric_functions_identical": true
+  },
+  "privacy_scan": "No private server paths, credentials, raw dataset images, pointclouds or task weights in release.",
+  "runtime_boundary": "Public launcher adaptation tested on CPU/filesystem fixtures; no new full GPU training run after this port.",
+  "environment_boundary": "Conda environment targets original versions; no environment solve/install performed in this local release check."
+}

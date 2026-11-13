@@ -1,0 +1,61 @@
+{
+  "upstream": {
+    "repository": "https://github.com/monniert/unicorn",
+    "commit": "0aaf84408b8d9360bea515d2738cc10525e1fd26",
+    "license": "MIT"
+  },
+  "training_seed": 132422,
+  "dataset": "ShapeNet NMR chair 03001627",
+  "epochs": 238,
+  "groups": [
+    "U",
+    "G",
+    "T",
+    "GT",
+    "GS",
+    "TS",
+    "GTS"
+  ],
+  "model_source_files": {
+    "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/dataset/__init__.py": "b76e99783f657a3b8a372161a2c6dbc28cca13e12a597f7acbeca32aac7f1bb6",
+    "src/dataset/comp_cars.py": "7b604705f35873086d7a3f3cf8d2c38eebbb0623e93cdf092c8f2ed86aaddf42",
+    "src/dataset/cub_200.py": "7bcf239f044b03738cfc457bfb91631b3bd2b04340e5e788d733e9c8d05e93c6",
+    "src/dataset/folder.py": "ebcb6ef1514d7ce7892ebd437250c52d30efa3b376bc82edd1b1c50272b09df7",
+    "src/dataset/lsun.py": "4073e8580d2db2943e6a69b370c23d8c420a4cfe476fc4a32a2610d68d0941f7",
+    "src/dataset/p3d_car.py": "efe49163f832fee20eda66c9c7ced2a2d0bf15c135d017679ea54465863f239b",
+    "src/dataset/shapenet.py": "ef8541bc0e83cee9afdae408bec60d2c9138cb9b0653b573f15febd71ee1edc6",
+    "src/dataset/torch_transforms.py": "f5907813eccf4454f4916fcc1c094badaf8438e185c18c63e113ee99bdedb9f5",
+    "src/kp_eval.py": "1962dc60c30f6c295dca4e8468ea60fcd1b5ae5f5948e90443861f160b52277d",
+    "src/model/__init__.py": "f3e442013a4a5685944db3552988087e712046c438b0904996fc51a1dc96a037",
+    "src/model/encoder.py": "50aa409aec4faa4cd644605e0da7de524b71b0a0f67cc3d9d9bcdf1186905112",
+    "src/model/field.py": "6b83dc7a8da8c8a326291b9cac982e22ac26b535c5bf6df21333fa4c4ff2d61e",
+    "src/model/generator.py": "ca75ebdcf43f8d6fba85c07f9bda9a669336439abdec851b9bfcbb245236eda6",
+    "src/model/loss.py": "65d6186e022d69864b634a19505556617203c75f68b2b932332a2868d806233b",
+    "src/model/pytorch3d_monkey.py": "64fe87a51e8426d1ef622558e63865d346fbc1efbe2fcc37a3cafd5d95f0d4e3",
+    "src/model/renderer.py": "21b30c5013bad0d7b3098c72698dc5565146862cf76d2993d62983c7194901d6",
+    "src/model/tools.py": "f205dd7c0e17078a8b8a20191bad98e4048b7c3e44b8b1a859f9a3ead3e4a5c8",
+    "src/model/unicorn.py": "a76efa48d084aab7727f85bdcf46b0c100a896181e911cc719fe03d3e91377de",
+    "src/optimizer.py": "e4383557aa27aeee960cbbd8fbba9b6bc3e2234b80568eaac698038a8ce94711",
+    "src/reconstruct.py": "51397056f6246d04eea86ae73c3c7c2756b56b3c9b820958de287874df9a2173",
+    "src/scheduler.py": "cb962faed4b942329995559b747cf8cd4ca444b1f4fa1d9bd611f3bd3b4b047e",
+    "src/trainer.py": "19fdaa23e0d02796088ee0968007d3d6df90d213aa08ec07575b7677d684ab90",
+    "src/utils/__init__.py": "abc82cd2d94e6ad1a5a6bcf7ed2a2bcae8dc8dc64b8bc9dead9e421c59338945",
+    "src/utils/chamfer.py": "f96ce05b68faf0d526775e018e2b3cad9110d12adfce052250778c3f993d29a3",
+    "src/utils/icp.py": "b4b4eda1623a4d0f944395d3fe321a31878b04e866580a11bb30c1d69dbb67ba",
+    "src/utils/image.py": "837543304723c83cf45ce4b81085a7c0fc0bc3ad57826b5f701472df0f6ff806",
+    "src/utils/logger.py": "80959c0a74cc8f53a926c493031f361ed172c45e69cfd25c9f6ecbbfc3d38a67",
+    "src/utils/mesh.py": "bb2a9a1f426648270a32d81b16ca78f02de37f3cdbeafcb5d654b4c37045f711",
+    "src/utils/metrics.py": "a2a12d007b897126b52434e23c91db1af0b8a5ea247fa670101df6eea5b6da33",
+    "src/utils/path.py": "21653429eb414a6aff86f86e3ab01b3c50553663da2a8d80fae8442745c0c7ae",
+    "src/utils/plot.py": "7ba62b393c0469d7a1395b4c053b7c08268df60f7b91c11d7048a69e008d0730",
+    "src/utils/pytorch.py": "76e89c753ec7fe8eb2891154c9dd08e272d1cfe1bdc115f35bcc6c45fde5de50"
+  },
+  "numerical_sources": {
+    "engine.py": "5a42db7aedcedd183101629bc3347ae803a3d1e917eba53860a786080c1a6403",
+    "resume_checks.py": "a42b4cf6d3a93b1cb72c9d1d4538eb50aee9831e1599ee301002b89833f26dde"
+  },
+  "pretrained_weights_included": false,
+  "dataset_images_or_pointclouds_included": false,
+  "scope": "Model, optimizer and metric math retained from audited experiments; public launchers are adapted for user-specified paths and require GPU smoke on each new environment."
+}
